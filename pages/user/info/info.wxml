@@ -7,7 +7,7 @@
     </view>
   </view>
   <view class="consumeInfo">
-    <view class="money">我的余额：￥300</view>
+    <view class="money">我的余额：300.00 元</view>
     <view class="consumeDetail consumeTab" bindtap="redirectOrder" hover="true" hover-class="consumeTabHover">我的消费记录</view>
     <view class="consumeTab consumeTabEnd" hover="true">修改密码</view>
   </view>
