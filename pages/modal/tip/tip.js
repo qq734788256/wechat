@@ -1,4 +1,4 @@
-// pages/common/regist/regist.js
+// pages/modal/tip/tip.js
 Page({
   data:{},
   onLoad:function(options){

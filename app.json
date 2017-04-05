@@ -5,7 +5,8 @@
     "pages/logs/logs",
     "pages/common/regist/regist",
     "pages/user/info/info",
-    "pages/order/orders/order"
+    "pages/order/orders/order",
+    "pages/modal/tip/tip"
   ],
   "window":{
     "backgroundTextStyle":"light",
