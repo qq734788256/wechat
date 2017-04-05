@@ -38,7 +38,9 @@
   display: flex;
   flex-direction: row;
   width: 80%;
-  padding-left: 5rpx
+  padding-left: 5rpx;
+  height:60rpx;
+  line-height: 60rpx;
 }
 .orderMoney{
   display: flex;
@@ -47,10 +49,14 @@
   width: 20%;
   color: #FF3030;
   font-weight: 600;
+  height:60rpx;
+  line-height: 60rpx;
 }
 .orderDate{
   display: flex;
   flex-direction: row-reverse;
   padding-right: 10rpx;
   margin-bottom: 10rpx;
+  height:60rpx;
+  line-height: 60rpx;
 }
