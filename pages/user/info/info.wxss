@@ -1,0 +1,59 @@
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #FF4500;
+  border-bottom: 1px solid #ccc;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+  margin-left: 15rpx;
+  border: 1px solid #fff;
+}
+
+.userName {
+  font-size: 30rpx;
+  padding-top: 40rpx;
+  font-weight: 600;
+  color: #fff;
+}
+
+.level {
+  font-size: 25rpx;
+  padding-top: 20rpx;
+  color: #fff;
+  font-weight: 550;
+}
+
+.consumeInfo{
+  font-size: 30rpx;
+}
+.money{
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  margin-left: 15rpx;
+}
+.consumeTab{
+  height: 90rpx;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  line-height: 90rpx;
+  background-color: #FFFAFA;
+  padding-left: 15rpx;
+}
+.consumeTabEnd{
+  border-bottom: 1px solid #aaa;
+}
+.consumeTabHover{
+  height: 90rpx;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  line-height: 90rpx;
+  background-color: #FFE4E1;
+}

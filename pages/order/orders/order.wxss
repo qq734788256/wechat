@@ -1,0 +1,56 @@
+.order{
+  color: #aaa;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #aaa;
+  font-size: 30rpx;
+  margin-bottom: 15rpx
+}
+.orderHead{
+  border-bottom: 1px solid #aaa;
+  display: flex;
+  flex-direction: row;
+}
+.orderNumber{
+  display: flex;
+  flex-direction: row;
+  margin-top:10rpx;
+  margin-bottom:10rpx;
+  width: 85%;
+  padding-left: 5rpx
+}
+.orderStatus{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top:10rpx;
+  margin-bottom:10rpx;
+  padding-right: 10rpx;
+  width: 15%;
+  font-weight: 600;
+}
+.orderComplete{
+  color: #008B00;
+}
+.orderInfo{
+  display: flex;
+}
+.orderProduct{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding-left: 5rpx
+}
+.orderMoney{
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 10rpx;
+  width: 20%;
+  color: #FF3030;
+  font-weight: 600;
+}
+.orderDate{
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 10rpx;
+  margin-bottom: 10rpx;
+}

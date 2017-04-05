@@ -1,0 +1,24 @@
+<view class="orderContainer">
+    <view class="order">
+        <view class="orderHead">
+            <view class="orderNumber">订单编号：201704051245689958002</view>
+            <view class="orderStatus orderComplete">已完成</view>
+        </view>
+        <view class="orderInfo">
+            <view class="orderProduct">苹果、西瓜各一个</view>
+            <view class="orderMoney">￥50.00</view>
+        </view>
+        <view class="orderDate">2017-04-05 13:21:50</view>
+    </view>
+    <view class="order">
+        <view class="orderHead">
+            <view class="orderNumber">订单编号：201704051245689958002</view>
+            <view class="orderStatus orderComplete">已完成</view>
+        </view>
+        <view class="orderInfo">
+            <view class="orderProduct">苹果、西瓜各一个</view>
+            <view class="orderMoney">￥50.00</view>
+        </view>
+        <view class="orderDate">2017-04-05 13:21:50</view>
+    </view>
+</view>
