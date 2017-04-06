@@ -7,7 +7,7 @@ Page({
   data:{
     orders:{},
     scrollHeight:0,
-    modelInfo:false
+    modelInfo:true
   },onPullDownRefresh: function() {
     // Do something when pull down.
      console.log('刷新');
