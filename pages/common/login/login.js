@@ -41,7 +41,10 @@ Page({
   onUnload:function(){
     // 页面关闭
   },
-  bindChange: function(e) {
+  userNameInput: function(e) {
+    inputContent[e.currentTarget.id] = e.detail.value
+  },
+  passwordInput: function(e) {
     inputContent[e.currentTarget.id] = e.detail.value
   },
   login: function(){

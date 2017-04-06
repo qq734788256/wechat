@@ -2,7 +2,7 @@
     <view class="logoContainer">
         <image src="http://p5.so.qhimgs1.com/t010a356b8eba1d14cb.jpg"></image>
     </view>
-    <input id="userName" name="userName" placeholder="请输入卡号/手机号" bindchange="bindChange" />
-    <input id="password" password placeholder="请输入密码" bindchange="bindChange" />
+    <input id="userName" name="userName" placeholder="请输入卡号/手机号" bindinput="userNameInput" />
+    <input id="password" password placeholder="请输入密码" bindinput="passwordInput" />
     <button id="login" type="primary" bindtap="login"> 登录 </button>
 </view>

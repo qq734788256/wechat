@@ -1,5 +1,7 @@
 //获取应用实例
 var app = getApp()
+var newPassword
+var oldPassword
 // 获取前端值
 var updateContent = {}
 Page({
@@ -18,13 +20,17 @@ Page({
   },
   onUnload:function(){
     // 页面关闭
+    oldPassword = null;
+    newPassword = null;
   },
-  bindChange: function(e) {
-    updateContent[e.currentTarget.id] = e.detail.value
+  oldPasswordInput:function(e){  
+    oldPassword = e.detail.value  
+  },  
+  newPasswordInput:function(e){  
+    newPassword = e.detail.value 
+    console.log(e.detail.value)  
   },
   update:function(){
-    var oldPassword = updateContent["oldPassword"]
-    var newPassword = updateContent["newPassword"]
     if(oldPassword == null || oldPassword == "" || newPassword == null || newPassword == ""){
       wx.showModal({
         title: '提示',
