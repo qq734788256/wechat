@@ -28,12 +28,10 @@ App({
     var that = this
     var header = {};
     // header下需要传递的信息
-    var token = wx.getStorage({
-      key: 'token',
-      success: function(res){
-        header = {"UToken":res}
-      }
-    })
+    var token = wx.getStorageSync('token')
+    if(token != null && token != ''){
+      header = {"UToken":token}
+    }
     wx.request({
       url: that.globalData.serviceURL+url,
       data: data,

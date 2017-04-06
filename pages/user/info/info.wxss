@@ -37,7 +37,7 @@
   margin-bottom: 40rpx;
   margin-left: 15rpx;
 }
-.consumeTab{
+.infoTab{
   height: 90rpx;
   border-top: 1px solid #aaa;
   border-left: 1px solid #aaa;
@@ -46,10 +46,10 @@
   background-color: #FFFAFA;
   padding-left: 15rpx;
 }
-.consumeTabEnd{
+.infoTabEnd{
   border-bottom: 1px solid #aaa;
 }
-.consumeTabHover{
+.infoTabHover{
   height: 90rpx;
   border-top: 1px solid #aaa;
   border-left: 1px solid #aaa;

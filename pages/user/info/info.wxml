@@ -1,14 +1,14 @@
 <view class="userContainer">
   <view class="userinfo" style="flex-direction:row;">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <image class="userinfo-avatar" src="{{wxuserInfo.avatarUrl}}" background-size="cover"></image>
     <view class="info" style="flex-direction:column;">
-        <view class="userName">{{userInfo.nickName}}</view>
-        <view class="level">钻石会员</view>
+        <view class="userName">{{userInfo.userName}}</view>
+        <view class="level">{{userInfo.role}}</view>
     </view>
   </view>
   <view class="consumeInfo">
-    <view class="money">我的余额：300.00 元</view>
-    <view class="consumeDetail consumeTab" bindtap="redirectOrder" hover="true" hover-class="consumeTabHover">我的消费记录</view>
-    <view class="consumeTab consumeTabEnd" hover="true">修改密码</view>
+    <view class="money">我的余额：{{userInfo.money}} 元</view>
+    <view class="infoTab" bindtap="redirectOrder" hover="true" hover-class="infoTabHover">我的消费记录</view>
+    <view class="infoTab infoTabEnd" hover="true" bindtap="redirectPassword" hover="true" hover-class="infoTabHover">修改密码</view>
   </view>
 </view>

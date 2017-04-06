@@ -4,7 +4,7 @@
   flex-direction: column;
   border: 1px solid #aaa;
   font-size: 30rpx;
-  margin-bottom: 15rpx
+  margin-bottom: 30rpx
 }
 .orderHead{
   border-bottom: 1px solid #aaa;
@@ -30,6 +30,15 @@
 }
 .orderComplete{
   color: #008B00;
+}
+.orderWait{
+  color: #FF3030;
+}
+.orderPay{
+  color: #FFC125;
+}
+.orderNoUserd{
+  color: #A9A9A9;
 }
 .orderInfo{
   display: flex;

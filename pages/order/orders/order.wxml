@@ -1,80 +1,18 @@
-<view class="orderContainer">
+<view class="orderContainer" wx:for="{{orders}}" wx:for-item="order" >
     <view class="order">
         <view class="orderHead">
-            <view class="orderNumber">订单编号：201704051245689958002</view>
-            <view class="orderStatus orderComplete">已完成</view>
+            <view class="orderNumber">订单编号：{{order.orderNumber}}</view>
+            <block wx:if="{{order.status == 2}}"><view class="orderStatus orderComplete">{{order.statusInfo}}</view></block>
+            <block wx:elif="{{order.status == 0}}"><view class="orderStatus orderWait">{{order.statusInfo}}</view></block>
+            <block wx:elif="{{order.status == 1}}"><view class="orderStatus orderPay">{{order.statusInfo}}</view></block>
+            <block wx:else><view class="orderStatus orderNoUserd">{{order.statusInfo}}</view></block>
+            
         </view>
         <view class="orderInfo">
-            <view class="orderProduct">苹果、西瓜各一个</view>
-            <view class="orderMoney">￥50.00</view>
+            <view class="orderProduct">{{order.orderContent}}</view>
+            <view class="orderMoney">￥{{order.orderMoney}}</view>
         </view>
-        <view class="orderDate">2017-04-05 13:21:50</view>
-    </view>
-    <view class="order">
-        <view class="orderHead">
-            <view class="orderNumber">订单编号：201704051245689958002</view>
-            <view class="orderStatus orderComplete">已完成</view>
-        </view>
-        <view class="orderInfo">
-            <view class="orderProduct">苹果、西瓜各一个</view>
-            <view class="orderMoney">￥50.00</view>
-        </view>
-        <view class="orderDate">2017-04-05 13:21:50</view>
-    </view>
-    <view class="order">
-        <view class="orderHead">
-            <view class="orderNumber">订单编号：201704051245689958002</view>
-            <view class="orderStatus orderComplete">已完成</view>
-        </view>
-        <view class="orderInfo">
-            <view class="orderProduct">苹果、西瓜各一个</view>
-            <view class="orderMoney">￥50.00</view>
-        </view>
-        <view class="orderDate">2017-04-05 13:21:50</view>
-    </view>
-    <view class="order">
-        <view class="orderHead">
-            <view class="orderNumber">订单编号：201704051245689958002</view>
-            <view class="orderStatus orderComplete">已完成</view>
-        </view>
-        <view class="orderInfo">
-            <view class="orderProduct">苹果、西瓜各一个</view>
-            <view class="orderMoney">￥50.00</view>
-        </view>
-        <view class="orderDate">2017-04-05 13:21:50</view>
-    </view>
-    <view class="order">
-        <view class="orderHead">
-            <view class="orderNumber">订单编号：201704051245689958002</view>
-            <view class="orderStatus orderComplete">已完成</view>
-        </view>
-        <view class="orderInfo">
-            <view class="orderProduct">苹果、西瓜各一个</view>
-            <view class="orderMoney">￥50.00</view>
-        </view>
-        <view class="orderDate">2017-04-05 13:21:50</view>
-    </view>
-    <view class="order">
-        <view class="orderHead">
-            <view class="orderNumber">订单编号：201704051245689958002</view>
-            <view class="orderStatus orderComplete">已完成</view>
-        </view>
-        <view class="orderInfo">
-            <view class="orderProduct">苹果、西瓜各一个</view>
-            <view class="orderMoney">￥50.00</view>
-        </view>
-        <view class="orderDate">2017-04-05 13:21:50</view>
-    </view>
-    <view class="order">
-        <view class="orderHead">
-            <view class="orderNumber">订单编号：201704051245689958002</view>
-            <view class="orderStatus orderComplete">已完成</view>
-        </view>
-        <view class="orderInfo">
-            <view class="orderProduct">苹果、西瓜各一个</view>
-            <view class="orderMoney">￥50.00</view>
-        </view>
-        <view class="orderDate">2017-04-05 13:21:50</view>
+        <view class="orderDate">{{order.orderTime}}</view>
     </view>
 </view>
 <include src="../../modal/tip/tip.wxml"/>

@@ -3,6 +3,7 @@ var app = getApp()
 
 Page({
   data:{
+    wxuserInfo: {},
     userInfo: {}
   },
   onLoad:function(options){
@@ -11,12 +12,20 @@ Page({
     app.getUserInfo(function(userInfo){
       //更新数据
       that.setData({
-        userInfo:userInfo
+        wxuserInfo:userInfo
       })
     })
     // 页面初始化 options为页面跳转所带来的参数
     app.doRequest("/user/info.wx","GET","",function(result){
       console.log("返回状态码："+ result.statusCode)
+      if(result.statusCode == 200){
+        //更新数据
+        that.setData({
+          userInfo:result
+        })
+      } else {
+        
+      }
     },function(result){
       console.log("返回状态码："+ result.statusCode)
     })
@@ -36,6 +45,11 @@ Page({
   redirectOrder:function(){
     wx.navigateTo({
       url: '../../order/orders/order'
+    })
+  },
+  redirectPassword:function(){
+    wx.navigateTo({
+      url: '../../user/password/password'
     })
   }
 })

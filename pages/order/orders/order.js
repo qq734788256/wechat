@@ -1,10 +1,10 @@
 // pages/order/order.js
+var pageNo = 1
+var pageSize = 10
 //获取应用实例
 var app = getApp()
 Page({
   data:{
-    pageNo:1,
-    pageSize:10,
     orders:{},
     scrollHeight:0,
     modelInfo:false
@@ -27,13 +27,17 @@ Page({
           });
         }
     });
+    console.log("/order/list.wx?pageNo="+pageNo+"&pageSize="+pageSize)
     // 页面初始化
-    app.doRequest("/login.wx","GET","",
+    app.doRequest("/order/list.wx?pageNo="+pageNo+"&pageSize="+pageSize,"GET","",
     function(result){
-      // 执行成功
-      that.setData({
-        pageNo:that.pageNo + 1
-      })
+      if(result.statusCode == 200){
+        // 执行成功
+        pageNo = pageNo + 1
+        that.setData({
+          orders:result.orders
+        })
+      }
     },function(result){
       // 执行失败
     })
@@ -46,14 +50,15 @@ Page({
   },
   onHide:function(){
     // 页面隐藏
+    console.log("hide")
   },
   onUnload:function(){
     // 页面关闭
+    console.log("close")
+    pageNo = 1
   },modalOk:function(){
-    console.log("取消")
     this.setData({
       modelInfo:true
     })
-    console.log("取消。。")
   }
 })

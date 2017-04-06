@@ -6,7 +6,8 @@
     "pages/common/regist/regist",
     "pages/user/info/info",
     "pages/order/orders/order",
-    "pages/modal/tip/tip"
+    "pages/modal/tip/tip",
+    "pages/user/password/password"
   ],
   "window":{
     "backgroundTextStyle":"light",
