@@ -11,4 +11,8 @@
     <view class="infoTab" bindtap="redirectOrder" hover="true" hover-class="infoTabHover">我的消费记录</view>
     <view class="infoTab infoTabEnd" hover="true" bindtap="redirectPassword" hover="true" hover-class="infoTabHover">修改密码</view>
   </view>
+
+  <view class="bottomView">
+    <button class="loginOut" bindtap="logout">退出</button>
+  </view>
 </view>

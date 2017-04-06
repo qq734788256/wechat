@@ -57,3 +57,13 @@
   line-height: 90rpx;
   background-color: #FFE4E1;
 }
+.bottomView{
+  margin-top: 60rpx;
+}
+.loginOut{
+  background: #FF4500;
+  width: 220rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #FFF;
+}
