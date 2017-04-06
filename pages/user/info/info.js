@@ -23,11 +23,18 @@ Page({
         that.setData({
           userInfo:result
         })
-      } else {
-        
+      } else if(result.statusCode == 502) {
+        wx.clearStorageSync("token")
+        wx.redirectTo({
+          url: '../../common/login/login'
+        })
       }
     },function(result){
       console.log("返回状态码："+ result.statusCode)
+      wx.clearStorageSync("token")
+      wx.redirectTo({
+        url: '../../common/login/login'
+      })
     })
   },
   onReady:function(){
