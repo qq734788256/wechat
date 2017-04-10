@@ -7,7 +7,6 @@ Page({
     userInfo: {}
   },
   onLoad:function(options){
-    console.log("aaaa")
     wx.showLoading({"title":"加载中...","mask":true})
     var that = this
     //调用应用实例的方法获取全局数据

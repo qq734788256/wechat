@@ -66,6 +66,7 @@ Page({
       function(result){
         console.log("返回状态码："+ result.statusCode)
         if(result.statusCode == 200){
+          inputContent = {}
           console.log("登录成功....")
           console.log("用户信息持久化到本地...")
           wx.setStorage({
