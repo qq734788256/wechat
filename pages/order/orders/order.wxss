@@ -6,6 +6,25 @@
   font-size: 30rpx;
   margin-bottom: 30rpx
 }
+.tabContainer{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10rpx;
+}
+.tabItem{
+  width: 50%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  font-family: 黑体;
+  border-top: 1rpx solid #ccc;
+  border-bottom: 1rpx solid #ccc;
+  color: #AAA;
+}
+.tabItemSelected{
+  background-color: #FF4500;
+  color: #fff;
+}
 .orderHead{
   border-bottom: 1px solid #aaa;
   display: flex;

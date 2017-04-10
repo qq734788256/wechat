@@ -12,14 +12,8 @@ Page({
       success: function(res){
         if(res != null){
           //跳转到index界面
-          wx.redirectTo({
-            url: '../../user/info/info',
-            success: function(res){
-            },
-            fail: function(res) {
-            },
-            complete: function(res) {
-            }
+          wx.switchTab({
+            url: '../../user/info/info'
           })
         }
       },
@@ -84,7 +78,7 @@ Page({
           })
           console.log("用户信息持久化完成，准备跳转至首页...")
           //跳转到index界面
-          wx.redirectTo({
+          wx.switchTab({
             url: '../../user/info/info'
           })
         } else {

@@ -8,6 +8,7 @@
   </view>
   <view class="consumeInfo">
     <view class="money">我的余额：{{userInfo.money}} 元</view>
+    <view class="infoTab" bindtap="redirectInfo" hover="true" hover-class="infoTabHover">个人信息</view>
     <view class="infoTab" bindtap="redirectOrder" hover="true" hover-class="infoTabHover">我的消费记录</view>
     <view class="infoTab infoTabEnd" hover="true" bindtap="redirectPassword" hover="true" hover-class="infoTabHover">修改密码</view>
   </view>

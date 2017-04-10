@@ -69,7 +69,11 @@ Page({
           })
         }
       },function(result){
-
+        wx.showModal({
+            title: '提示',
+            content: "服务异常",
+            showCancel: false
+        })
       })
     }
   }

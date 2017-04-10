@@ -1,18 +1,24 @@
-<view class="orderContainer" wx:for="{{orders}}" wx:for-item="order" >
-    <view class="order">
-        <view class="orderHead">
-            <view class="orderNumber">订单编号：{{order.orderNumber}}</view>
-            <block wx:if="{{order.status == 2}}"><view class="orderStatus orderComplete">{{order.statusInfo}}</view></block>
-            <block wx:elif="{{order.status == 0}}"><view class="orderStatus orderWait">{{order.statusInfo}}</view></block>
-            <block wx:elif="{{order.status == 1}}"><view class="orderStatus orderPay">{{order.statusInfo}}</view></block>
-            <block wx:else><view class="orderStatus orderNoUserd">{{order.statusInfo}}</view></block>
-            
-        </view>
-        <view class="orderInfo">
-            <view class="orderProduct">{{order.orderContent}}</view>
-            <view class="orderMoney">￥{{order.orderMoney}}</view>
-        </view>
-        <view class="orderDate">{{order.orderTime}}</view>
+<view class="orderContainer">
+    <view class="tabContainer">
+        <view class="tabItem {{showItem == 0 ? 'tabItemSelected' : '' }}" data-id="0" bindtap="selectItem">消费</view>
+        <view class="tabItem {{showItem == 1 ? 'tabItemSelected' : '' }}" data-id="1" bindtap="selectItem">充值</view>
     </view>
+    <block wx:for="{{orders}}" wx:for-item="order">
+        <view class="order">
+            <view class="orderHead">
+                <view class="orderNumber">订单编号：{{order.orderNumber}}</view>
+                <block wx:if="{{order.status == 2}}"><view class="orderStatus orderComplete">{{order.statusInfo}}</view></block>
+                <block wx:elif="{{order.status == 0}}"><view class="orderStatus orderWait">{{order.statusInfo}}</view></block>
+                <block wx:elif="{{order.status == 1}}"><view class="orderStatus orderPay">{{order.statusInfo}}</view></block>
+                <block wx:else><view class="orderStatus orderNoUserd">{{order.statusInfo}}</view></block>
+                
+            </view>
+            <view class="orderInfo">
+                <view class="orderProduct">{{order.orderContent}}</view>
+                <view class="orderMoney">￥{{order.orderMoney}}</view>
+            </view>
+            <view class="orderDate">{{order.orderTime}}</view>
+        </view>
+    </block>
 </view>
 <include src="../../modal/tip/tip.wxml"/>

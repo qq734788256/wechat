@@ -1,19 +1,42 @@
 {
   "pages":[
     "pages/common/login/login",
+    "pages/user/info/info",
     "pages/index/index",
     "pages/logs/logs",
     "pages/common/regist/regist",
-    "pages/user/info/info",
     "pages/order/orders/order",
     "pages/modal/tip/tip",
     "pages/modal/shadow/shadow",
-    "pages/user/password/password"
+    "pages/user/password/password",
+    "pages/user/detail/info",
+    "pages/shop/car"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",  
+    "selectedColor": "#11cd6e",  
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/index_lgr.png",
+      "selectedIconPath": "images/index_gre.png"
+    },{
+      "pagePath": "pages/shop/car",
+      "text": "购物车",
+      "iconPath": "images/shoppingcart_lgr.png",
+      "selectedIconPath": "images/shoppingcart_gre.png"
+    },{
+      "pagePath": "pages/user/info/info",
+      "text": "我的",
+      "iconPath": "images/user_lgr.png",
+      "selectedIconPath": "images/user_gre.png"
+    }]
   }
 }

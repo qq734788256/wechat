@@ -7,6 +7,8 @@ Page({
     userInfo: {}
   },
   onLoad:function(options){
+    console.log("aaaa")
+    wx.showLoading({"title":"加载中...","mask":true})
     var that = this
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
@@ -36,6 +38,7 @@ Page({
         url: '../../common/login/login'
       })
     })
+    wx.hideLoading()
   },
   onReady:function(){
     // 页面渲染完成
