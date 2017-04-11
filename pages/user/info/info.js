@@ -61,6 +61,11 @@ Page({
       url: '../../user/password/password'
     })
   },
+  redirectInfo:function(){
+    wx.navigateTo({
+      url: '../../user/detail/info'
+    })
+  },
   logout:function(){
     wx.clearStorageSync("token")
     wx.redirectTo({

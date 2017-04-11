@@ -14,5 +14,4 @@
             </view>  
         </view>  
      </view>  
-</view>  
-<view bindtap="showShadow">显示</view>
+</view>

@@ -1,1 +1,12 @@
-/* pages/user/detail/info.wxss */
+.detailContainer{
+    display: flex;
+    flex-direction: column;
+    font-size: 30rpx;
+}
+.detailTab{
+    display: flex;
+    flex-direction: row;
+    height: 80rpx;
+    line-height: 80rpx;
+    margin-left: 30rpx;
+}

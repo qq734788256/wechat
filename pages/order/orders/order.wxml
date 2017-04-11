@@ -21,4 +21,3 @@
         </view>
     </block>
 </view>
-<include src="../../modal/tip/tip.wxml"/>

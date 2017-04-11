@@ -1,1 +1,18 @@
-/* pages/modal/tip/tip.wxss */
+/**
+
+*.wxml中 <include src="path/tip.wxml"/>
+*.js中
+    Page({
+      data:{
+          modelInfo:true
+      }
+    )}
+并加入相应事件
+  hide: function(){  
+    this.setData({modelInfo: true})  
+  },  
+  show: function(){  
+    this.setData({modelInfo: false})  
+  }
+
+**/

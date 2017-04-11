@@ -1,5 +1,5 @@
 <modal class="modal" no-cancel bindconfirm="modalOk" hidden="{{modelInfo}}" confirmText="我知道了">  
     <view class="dew">  
-      <view class="vedw">根据您当前所在位置，向您推荐以下服务站点，该服务点服务范围周边3公里</view> 
+      <view class="vedw">根据您当前所在位置，向您推荐以下服务站点，该服务点服务范围周边{{showItem}}公里</view> 
 </view>  
 </modal>

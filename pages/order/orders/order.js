@@ -7,7 +7,6 @@ Page({
   data:{
     orders:{},
     scrollHeight:0,
-    modelInfo:true,
     showItem:0
   },onPullDownRefresh: function() {
      console.log('刷新');

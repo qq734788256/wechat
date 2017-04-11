@@ -1,9 +1,20 @@
 <view class="detailContainer">
-    <text>卡号：</text>
-    <text>卡号：</text>
-    <text>卡号：</text>
-    <text>卡号：</text>
-    <text>卡号：</text>
-    <text>卡号：</text>
-    <text>卡号：</text>
+    <view class="detailTab">
+        <text>会员卡号:</text><text>{{userInfo.cardNumber}}</text>
+    </view>
+    <view class="detailTab">
+        <text>用    户    名:</text><text>{{userInfo.userName}}</text>
+    </view>
+    <view class="detailTab">
+        <text>会员等级:</text><text>{{userInfo.role}}</text>
+    </view>
+    <view class="detailTab">
+        <text>卡内余额:</text><text>{{userInfo.money}}</text>
+    </view>
+    <view class="detailTab">
+        <text>联系方式:</text><text>{{userInfo.phone}}</text>
+    </view>
+    <view class="detailTab">
+        <text>创建时间:</text><text>{{userInfo.createTime}}</text>
+    </view>
 </view>
