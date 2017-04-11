@@ -16,7 +16,6 @@
   height: 90rpx;
   line-height: 90rpx;
   text-align: center;
-  font-family: 黑体;
   border-top: 1rpx solid #ccc;
   border-bottom: 1rpx solid #ccc;
   color: #AAA;
