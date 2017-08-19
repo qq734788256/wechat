@@ -7,7 +7,8 @@ Page({
   data:{
     orders:{},
     scrollHeight:0,
-    showItem:0
+    showItem:0,
+    noMore:true
   },onPullDownRefresh: function() {
      console.log('刷新');
      wx.stopPullDownRefresh();
@@ -48,7 +49,8 @@ Page({
         // 执行成功
         pageNo = pageNo + 1
         that.setData({
-          orders:result.orders
+          orders:result.orders,
+          noMore:result.haveNext
         })
       }
     },function(result){
@@ -90,7 +92,8 @@ Page({
           // 执行成功
           pageNo = pageNo + 1
           that.setData({
-            orders:result.orders
+            orders:result.orders,
+          noMore:result.haveNext
           })
         }
       },function(result){

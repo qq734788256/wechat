@@ -20,4 +20,10 @@
             <view class="orderDate">{{order.orderTime}}</view>
         </view>
     </block>
+    <view class="noMore" hidden="{{noMore}}">
+        已无更多
+    </view>
+    <view class="noMore" hidden="{{!noMore}}">
+        下拉加载更多
+    </view>
 </view>

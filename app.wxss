@@ -26,3 +26,11 @@
 }  
 .btn2{margin:30rpx auto 40rpx auto;border:1px solid transparent;outline:none;-webkit-appearance: none;-moz-appearance: none;height: 88rpx;line-height: 88rpx;width:630rpx;border-radius: 60rpx;font-family: '微软雅黑';font-size: 36rpx;color: #ffffff;cursor: pointer;background-color: #5adad0;text-align: center;box-shadow:0rpx 10rpx 9rpx 0rpx rgba(90,218,208,0.35);  
 }
+
+/** 已无更多  **/
+.noMore{
+  text-align: center;
+  color: #aaa;
+  font-size: 30rpx;
+  width: 100%
+}

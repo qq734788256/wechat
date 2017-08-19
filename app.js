@@ -49,6 +49,7 @@ App({
   },
   globalData:{
     userInfo:null,
-    serviceURL:"https://www.i-wangyunlong.com/wxapi"
+    // serviceURL:"https://www.i-wangyunlong.com/wxapi"
+    serviceURL:"http://www.i-wangyunlong.com:8080/wxapi"
   }
 })
